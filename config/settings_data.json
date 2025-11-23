@@ -61,6 +61,7 @@
     "show_add_discount_code": true,
     "drawer_drop_shadow": true,
     "icon_stroke": "default",
+    "use_custom_icons": true,
     "input_border_width": 1,
     "inputs_border_radius": 4,
     "popover_border_radius": 14,
