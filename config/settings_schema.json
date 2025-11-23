@@ -1899,6 +1899,12 @@
           }
         ],
         "default": "default"
+      },
+      {
+        "type": "checkbox",
+        "id": "use_custom_icons",
+        "label": "t:customs.use_custom_icons",
+        "default": false
       }
     ]
   },

@@ -20,7 +20,15 @@
         aria-hidden="true"
         class="svg-wrapper"
       >
-        {{ 'icon-search.svg' | inline_asset_content }}
+        {% assign use_custom_icons = settings.use_custom_icons %}
+    
+        {%  if use_custom_icons %}
+          {% assign icon = 'c-icon-search.svg' %}
+        {% else %}
+          {% assign icon = 'icon-search.svg' %}
+        {% endif %}
+
+        {{ icon | inline_asset_content }}
       </span>
     </button>
   </search-button>

@@ -40,7 +40,15 @@
       class="account-button__icon"
       aria-hidden="true"
     >
-      {{- 'icon-account.svg' | inline_asset_content -}}
+      {%- assign use_custom_icons = settings.use_custom_icons -%}
+      
+      {%- if use_custom_icons -%}
+        {%- assign icon = 'c-icon-account.svg' -%}
+      {%- else -%}
+        {%- assign icon = 'icon-account.svg' -%}
+      {%- endif -%}
+
+      {{- icon | inline_asset_content -}}
     </span>
   {%- endif -%}
 </{{ tag }}>
